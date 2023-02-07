@@ -1,0 +1,435 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* height: 100%;
+    width: 100%; */
+    background-image: url(pfo_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /* opacity: 0.5; */
+    
+}
+
+#navbar ul{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 12px;
+ 
+}
+#navbar ul li{
+    
+    list-style: none;
+    padding: 15px 15px;
+    margin: 3px;
+    font-size: 1.3rem;
+    /* color: ; */
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+
+}
+#navbar ul li:hover{
+ 
+    transform: scale(1.2);
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.name{ 
+     display: flex;
+     flex-direction: column;
+     height: 700px; 
+     padding: 3px 90px;
+     justify-content: center;
+     /* text-align: center; */
+     /* width: 500px; */
+}
+.name h2{
+    font-size: 35px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.name h1{
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    font-weight: 100;
+}
+.name h3{
+    font-size: 25px;
+}
+.social{
+    display: inline-block;
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+}
+.fa{
+
+    padding: 10px;
+    font-size: 1.5rem;
+    /* border: 2px solid black; */
+     border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+   
+   
+
+}
+.fa-github{
+    color: white;
+  
+}
+.fa-instagram{
+    color: white;
+    
+}
+.fa-twitter{
+    color: white;
+   
+}
+.fa-linkedin{
+    color: white;
+  
+}
+.fa-facebook{
+    color: white;
+  
+}
+.fa:hover{
+    transform: scale(1.3);
+    transition: all 0.2s;
+}
+
+
+label{
+    position: absolute;
+    right: 50px;
+    display: none;
+}
+#check{
+    position: fixed;
+    z-index: 3;
+}
+label .menu-btn{
+    position: fixed;
+    right: 50px;
+}
+
+/* -----------------Responsive-------------------- */
+@media (max-width: 950px){
+    nav #navbar{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    label .close-btn{
+        display: none;
+    }
+
+    #check:checked ~ nav #navbar{
+        z-index: 2;
+        position: fixed;
+        background: rgb(53, 32, 69);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        /* flex-direction: column; */
+       
+    }
+    #check:checked ~ nav #navbar ul{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        margin: auto;
+
+    } 
+    #check:checked ~nav label .menu-btn{
+        display: none;
+    }
+    #check:checked ~nav label .close-btn{
+        display: block;
+        position: fixed;
+        z-index: 3;
+        right: 25px;
+    }
+}
+
+
+
+
+
+/* --------------About Me----------------- */
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+.about{
+    font: 25px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    height: 95vh;
+}
+.about h1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 15vh;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 35px;
+}
+.descrip{
+    font-size: 25px;
+    justify-content: center;
+}
+.about img{
+    height: 300px;
+    width: 300px;
+    padding: 35px;
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; */
+}
+
+/* -----------------Intrests--------------------- */
+
+.intrests{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+.intrests h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 100px 0px;
+    font-size: 50px;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.container1 img{
+    display: flex;
+    position: relative;
+    height: 170px;
+    width: 295x;
+    padding: 25px;
+    justify-content: center;
+    /* padding-top: 250px; */
+    
+}
+.container1 img:hover{
+    /* width: 395px;
+    height: 270px; */
+    transition: all 0.4s;
+    transform: scale(1.2);
+}
+.images{
+    display: flex;
+}
+.images:hover h2{
+    display: block;
+    font-size: 35px;
+    opacity: 1;
+    z-index: 2;
+    transition: all 0.4s;
+    /* transform: translate(-50%, -50%); */
+    transform: translate(-10px,-10px);
+    transition: all 0.4s;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.images h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: none;
+    transition: all 0.4s;
+}
+/* --------------skills---------------- */
+.skillbox{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    /* border: 2px solid green; */
+}
+.skillhead{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    /* padding: 200px 10px 30px 10px; */
+    display: flex;
+    font-size: 40px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.skill{
+    width: 385px;
+    height: 6px;
+    background-color: white;
+    border-radius: 15px;
+}
+.skillcontainer{
+    display: flex;
+    flex-direction: column;
+     margin: auto;
+     margin-top: 20px;
+     width: 450px;
+ 
+}
+.skillitem{
+    padding: 12px; 
+    font-size: 20px;
+}
+.ninetyfive{
+    width: 380px;
+}
+.eigthyfive{
+    width: 340px;
+}
+.hundred{
+    width: 410px;
+
+}
+.fiftyfive{
+    width: 240px;
+}
+/* ----------------Contact Me-------------- */
+
+
+
+.contactbox{
+  position: relative;
+    /* z-index: -1; */
+    height: 90vh;
+}
+.formcontainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    height: 50vh;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#contacthead{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+.form1{
+    display: flex;
+    flex-direction: row;
+    margin: 12px 12px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    border: 2px solid white;
+    font-weight:bold;
+}
+.formb{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    /* cursor: pointer; */
+    justify-items: center;
+}
+.formb:hover{
+    transform: scale(1.2);
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+
+}
+.contactbox nav{
+    z-index: -1;
+}
+
+/* ----------------Responsive------------- */
+@media (max-width: 950px){
+    /* -----About------ */
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .descrip{
+        position:relative;
+        justify-content: center;
+        padding-left: 30px ;
+    }
+    .about h1{
+        margin: auto;
+        top: 50px;
+        display: flex;
+        position: absolute;
+    }
+
+    /* ---------------Contact Me-------------- */
+    .formcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    /* -------------------My Intrests---------------- */
+    .images{
+        display: flex;
+        flex-direction: column;
+    }
+    .images div{
+        padding: 15px;
+    }
+    #contacthead{
+        display: flex;
+        margin: auto;
+    }
+}
+body{
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translate(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

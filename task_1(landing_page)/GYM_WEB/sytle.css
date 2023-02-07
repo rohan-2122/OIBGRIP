@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    
+}
+#navbar p{
+    padding-left: 8px;
+    padding-top: 0px;
+    margin: 2px 2px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+}
+#navbar ul {
+    display: flex;
+    text-decoration: none;
+    /* text-align: center; */
+    list-style: none;
+    align-items: center;
+}
+#navbar ul li{
+    color: white;
+    padding: 15px 15px;
+    margin: 10px 12px;
+    font-size: 20px;
+    /* border: 2px solid black; */
+    border-radius: 34px;
+}
+#navbar img{
+    padding: 10px 15px;
+    margin: 10px 5px;
+}
+#navbar img{
+    height: 58px;
+    width: 100px;
+}
+#navbar ul li:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 190px;
+    height: 718px;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+.home button{
+    display: flex;
+    height: 50px;
+    width: 130px;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    padding: 6px 20px;
+    font-size: 1.3rem;
+    background: rgb(249, 67, 67);
+    color: white;
+    border: 2px double black;
+    border-radius: 18px;
+    margin: 17px 17px;
+    cursor: pointer;
+}
+.home button:hover{
+    background: blanchedalmond;
+    color: black;
+}
+.right{
+    display: inline-block;
+    position: fixed;
+    bottom: 3px;
+    left: 12px;
+}
+
+.fa{
+    
+    padding: 15px;
+    font-size: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+
+
+}
+.fa-facebook{
+    color: white;
+ 
+    
+    /* background-color: black; */
+}
+
+.fa-instagram{
+    color: white;
+ 
+}
+.fa-twitter{
+    color: white;
+    /* background: black; */
+}
+.fa-linkedin{
+    color: white;
+}
+.fa-github{
+    color: white;
+}
+.fa:hover{
+    background: white;
+    color: black;
+    transition-property: background-color;
+    /* transition-duration: 0.5s; */
+    transition: all 0.4s;
+    transform: scale(1.3);
+}
+.home h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+.home p{
+    color: white;
+    font-size: 25px;
+}
+.home div{
+    display: flex;
+    /* flex-direction: column; */
+}
+
